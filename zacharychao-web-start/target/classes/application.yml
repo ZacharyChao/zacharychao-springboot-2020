@@ -1,0 +1,20 @@
+server:
+  port: 80
+  
+debug: false
+spring:
+  servlet:
+    multipart:
+#临时存放文件夹
+      location: d:/temp
+#一个请求的最大尺寸
+      max-request-size:
+        50mb
+#单个文件最大不超过2mb
+      max-file-size:
+        2mb
+  mvc:
+    date-format: yyyy-MM-dd
+app:
+ upload:
+  location: d:/uploaded/
